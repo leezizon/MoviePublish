@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0", maximum-scale="1.0">     
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="이지은">
+    <meta name="description" content="메가박스사이트 튜토리얼">
+    <meta name="keywords" content="메가박스, 유튜브, 영화">
+    <title>메가박스 클론</title>
+
+    <link rel="stylesheet" href="mega/assets/css/style02.css">
+    <link rel="stylesheet" href="mega/assets/css/reset02.css">
+    <link rel="stylesheet" href="mega/assets/css/swiper.css">
+    <link rel="stylesheet" href="mega/assets/css/font-awesome.css">
+
+    <link rel="shortcut icon" href="mega/assets/icons/favicon.ico">
+    <link rel="apple-touch-icon" href="mega/assets/icons/favicon_72.ico">
+    <link rel="apple-touch-icon" sizes="96x96" href="mega/assets/icons/favicon_96.ico">
+    <link rel="apple-touch-icon" sizes="144x144" href="mega/assets/icons/favicon_144.ico">
+    <link rel="apple-touch-icon" sizes="192x192" href="mega/assets/icons/favicon_192.ico">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- //header -->
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="header clearfix">
+                    <h1>
+                        <a href="index.html">
+                            <em><img src="mega/assets/img/logo.png" alt="메가박스"></em>
+                            <strong><img src="mega/assets/img/logo-sub.png" alt="LIFE THEATER"></strong>
+                        </a>
+                    </h1>
+                    <nav id="Mnav">
+                        <h2 class="ir_so">모바일 메뉴</h2>
+                        <a class="ham" href="#">
+                            <span></span>
+                        </a>
+                        <!-- <div class="Mnav_btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div> -->
+                    </nav>
+                    <nav class="nav">
+                        <ul class="clearfix">
+                            <li><a href="#">영화</a></li>
+                            <li><a href="#">큐레이션</a></li>
+                            <li><a href="#">영화관</a></li>
+                            <li><a href="#">특별관</a></li>
+                            <li><a href="#">스토어</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">로그인</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <!-- //banner -->
+    <section id="banner">
+        <h2 class="ir_so">영화예매</h2>
+        <div class="banner_menu">
+            <div class="container">
+                <div class="row">
+                    <div class="banner_menu_left">
+                        <ul>
+                            <li class="toral"><a href="#"><i class="fa fa-bars"></i>전체메뉴</a></li>
+                            <li class="line"><a href="#">필름 소사이어티</a></li>
+                            <li><a href="#">클래식 소사이어티</a></li>
+                        </ul>
+                    </div>
+                    <div class="banner_menu_right">
+                        <ul>
+                            <li class="line"><a href="#">고객센터</a></li>
+                            <li class="line"><a href="#">멤버쉽</a></li>
+                            <li><a href="#">VIP</a></li>
+                        </ul>
+                        <ul>
+                            <li class="white"><a href="#">상영시간표</a></li>
+                            <li class="purple"><a href="#">빠른 예매</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide ssl">
+                        <div class="container">
+                            <div class="row">
+                                <h2>캡틴 마블<em>Captain Marvel</em></h2>
+                                <p>영웅의 시작, 캡틴 마블이 영웅이 되다!</p>
+                            </div>
+                        </div>
+                        <!-- <img src="mega/assets/img/main_slider01.jpg" alt="베스와 베라"> -->
+                    </div>
+                    <div class="swiper-slide ss2">
+                        <div class="container">
+                            <div class="row">
+                                <h2>캡틴 마블<em>Captain Marvel</em></h2>
+                                <p>영웅의 시작, 캡틴 마블이 영웅이 되다!</p>
+                            </div>
+                        </div>
+                        <!-- <img src="mega/assets/img/main_slider02_2000.jpg" alt="베스와 베라"> -->
+                    </div>
+                    <div class="swiper-slide ss3">
+                        <div class="container">
+                            <div class="row">
+                                <h2>캡틴 마블<em>Captain Marvel</em></h2>
+                                <p>영웅의 시작, 캡틴 마블이 영웅이 되다!</p>
+                            </div>
+                        </div>
+                        <!-- <img src="mega/assets/img/main_slider03_2000.jpg" alt="베스와 베라"> -->
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+    <!-- //banner -->
+    
+
+    <!-- movie -->
+    <section id="movie">
+        <div class="container">
+            <div class="row">
+                <div class="movie">
+                    <h2 class="ir_so">최신 영화 정보</h2>
+                    <div class="movie-title">
+                        <ul>
+                            <li class="active"><a href="#">박스오피스</a></li>
+                            <li><a href="#">개봉영화</a></li>
+                            <li><a href="#">개봉예정</a></li>
+                            <li><a href="#">센세이션</a></li>
+                        </ul>
+                    </div>
+                    <div class="movie-chart">
+                        <div class="swiper-container2">
+                            <div class="chart-cont1 swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="mega/assets/img/poster01.jpg" srcset="mega/assets/img/poster01@2.jpg 2x" alt="">
+                                        </figure>
+                                        <div class="rank"><strong>1</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir_pm">MX</span>
+                                            <span class="icon b ir_pm">Boutique</span>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h3><span class="icon ir_pm all">전체관람가</span><strong>침묵</strong></strong></h3>
+                                        <div class="info-btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="mega/assets/img/poster02.jpg" srcset="mega/assets/img/poster02@2.jpg 2x" alt="">
+                                        </figure>
+                                        <div class="rank"><strong>2</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir_pm">MX</span>
+                                            <span class="icon b ir_pm">Boutique</span>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h3><span class="icon ir_pm a12">전체관람가</span><strong>침묵</strong></strong></h3>
+                                        <div class="info-btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="mega/assets/img/poster03.jpg" srcset="mega/assets/img/poster03@2.jpg 2x" alt="">
+                                        </figure>
+                                        <div class="rank"><strong>3</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir_pm">MX</span>
+                                            <span class="icon b ir_pm">Boutique</span>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h3><span class="icon ir_pm a15">전체관람가</span><strong>침묵</strong></strong></h3>
+                                        <div class="info-btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="mega/assets/img/poster04.jpg" srcset="mega/assets/img/poster04@2.jpg 2x" alt="">
+                                        </figure>
+                                        <div class="rank"><strong>4</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir_pm">MX</span>
+                                            <span class="icon b ir_pm">Boutique</span>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h3><span class="icon ir_pm a19">전체관람가</span><strong>침묵</strong></strong></h3>
+                                        <div class="info-btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="mega/assets/img/poster01.jpg" srcset="mega/assets/img/poster01@2.jpg 2x" alt="">
+                                        </figure>
+                                        <div class="rank"><strong>1</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir_pm">MX</span>
+                                            <span class="icon b ir_pm">Boutique</span>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h3><span class="icon ir_pm all">전체관람가</span><strong>침묵</strong></strong></h3>
+                                        <div class="info-btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="mega/assets/img/poster02.jpg" srcset="mega/assets/img/poster02@2.jpg 2x" alt="">
+                                        </figure>
+                                        <div class="rank"><strong>2</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir_pm">MX</span>
+                                            <span class="icon b ir_pm">Boutique</span>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h3><span class="icon ir_pm a12">전체관람가</span><strong>침묵</strong></strong></h3>
+                                        <div class="info-btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="mega/assets/img/poster03.jpg" srcset="mega/assets/img/poster03@2.jpg 2x" alt="">
+                                        </figure>
+                                        <div class="rank"><strong>3</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir_pm">MX</span>
+                                            <span class="icon b ir_pm">Boutique</span>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h3><span class="icon ir_pm a15">전체관람가</span><strong>침묵</strong></strong></h3>
+                                        <div class="info-btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="mega/assets/img/poster04.jpg" srcset="mega/assets/img/poster04@2.jpg 2x" alt="">
+                                        </figure>
+                                        <div class="rank"><strong>4</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir_pm">MX</span>
+                                            <span class="icon b ir_pm">Boutique</span>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h3><span class="icon ir_pm a19">전체관람가</span><strong>침묵</strong></strong></h3>
+                                        <div class="info-btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-container2">
+                            <div class="chart-cont2 swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="mega/assets/img/poster01.jpg" srcset="mega/assets/img/poster01@2.jpg 2x" alt="">
+                                        </figure>
+                                        <div class="rank"><strong>1</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir_pm">MX</span>
+                                            <span class="icon b ir_pm">Boutique</span>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h3><span class="icon ir_pm all">전체관람가</span><strong>침묵</strong></strong></h3>
+                                        <div class="info-btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="mega/assets/img/poster02.jpg" srcset="mega/assets/img/poster02@2.jpg 2x" alt="">
+                                        </figure>
+                                        <div class="rank"><strong>2</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir_pm">MX</span>
+                                            <span class="icon b ir_pm">Boutique</span>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h3><span class="icon ir_pm a12">전체관람가</span><strong>침묵</strong></strong></h3>
+                                        <div class="info-btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="mega/assets/img/poster03.jpg" srcset="mega/assets/img/poster03@2.jpg 2x" alt="">
+                                        </figure>
+                                        <div class="rank"><strong>3</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir_pm">MX</span>
+                                            <span class="icon b ir_pm">Boutique</span>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h3><span class="icon ir_pm a15">전체관람가</span><strong>침묵</strong></strong></h3>
+                                        <div class="info-btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="mega/assets/img/poster04.jpg" srcset="mega/assets/img/poster04@2.jpg 2x" alt="">
+                                        </figure>
+                                        <div class="rank"><strong>4</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir_pm">MX</span>
+                                            <span class="icon b ir_pm">Boutique</span>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h3><span class="icon ir_pm a19">전체관람가</span><strong>침묵</strong></strong></h3>
+                                        <div class="info-btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="mega/assets/img/poster01.jpg" srcset="mega/assets/img/poster01@2.jpg 2x" alt="">
+                                        </figure>
+                                        <div class="rank"><strong>1</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir_pm">MX</span>
+                                            <span class="icon b ir_pm">Boutique</span>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h3><span class="icon ir_pm all">전체관람가</span><strong>침묵</strong></strong></h3>
+                                        <div class="info-btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-container2">
+                            <div class="chart-cont3 swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="mega/assets/img/poster01.jpg" srcset="mega/assets/img/poster01@2.jpg 2x" alt="">
+                                        </figure>
+                                        <div class="rank"><strong>1</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir_pm">MX</span>
+                                            <span class="icon b ir_pm">Boutique</span>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h3><span class="icon ir_pm all">전체관람가</span><strong>침묵</strong></strong></h3>
+                                        <div class="info-btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="mega/assets/img/poster02.jpg" srcset="mega/assets/img/poster02@2.jpg 2x" alt="">
+                                        </figure>
+                                        <div class="rank"><strong>2</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir_pm">MX</span>
+                                            <span class="icon b ir_pm">Boutique</span>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h3><span class="icon ir_pm a12">전체관람가</span><strong>침묵</strong></strong></h3>
+                                        <div class="info-btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="mega/assets/img/poster03.jpg" srcset="mega/assets/img/poster03@2.jpg 2x" alt="">
+                                        </figure>
+                                        <div class="rank"><strong>3</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir_pm">MX</span>
+                                            <span class="icon b ir_pm">Boutique</span>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h3><span class="icon ir_pm a15">전체관람가</span><strong>침묵</strong></strong></h3>
+                                        <div class="info-btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="mega/assets/img/poster04.jpg" srcset="mega/assets/img/poster04@2.jpg 2x" alt="">
+                                        </figure>
+                                        <div class="rank"><strong>4</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir_pm">MX</span>
+                                            <span class="icon b ir_pm">Boutique</span>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h3><span class="icon ir_pm a19">전체관람가</span><strong>침묵</strong></strong></h3>
+                                        <div class="info-btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="mega/assets/img/poster01.jpg" srcset="mega/assets/img/poster01@2.jpg 2x" alt="">
+                                        </figure>
+                                        <div class="rank"><strong>1</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir_pm">MX</span>
+                                            <span class="icon b ir_pm">Boutique</span>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h3><span class="icon ir_pm all">전체관람가</span><strong>침묵</strong></strong></h3>
+                                        <div class="info-btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="mega/assets/img/poster02.jpg" srcset="mega/assets/img/poster02@2.jpg 2x" alt="">
+                                        </figure>
+                                        <div class="rank"><strong>2</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir_pm">MX</span>
+                                            <span class="icon b ir_pm">Boutique</span>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h3><span class="icon ir_pm a12">전체관람가</span><strong>침묵</strong></strong></h3>
+                                        <div class="info-btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="mega/assets/img/poster03.jpg" srcset="mega/assets/img/poster03@2.jpg 2x" alt="">
+                                        </figure>
+                                        <div class="rank"><strong>3</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir_pm">MX</span>
+                                            <span class="icon b ir_pm">Boutique</span>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h3><span class="icon ir_pm a15">전체관람가</span><strong>침묵</strong></strong></h3>
+                                        <div class="info-btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="mega/assets/img/poster04.jpg" srcset="mega/assets/img/poster04@2.jpg 2x" alt="">
+                                        </figure>
+                                        <div class="rank"><strong>4</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir_pm">MX</span>
+                                            <span class="icon b ir_pm">Boutique</span>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h3><span class="icon ir_pm a19">전체관람가</span><strong>침묵</strong></strong></h3>
+                                        <div class="info-btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-container2">
+                            <div class="chart-cont4 swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="mega/assets/img/poster01.jpg" srcset="mega/assets/img/poster01@2.jpg 2x" alt="">
+                                        </figure>
+                                        <div class="rank"><strong>1</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir_pm">MX</span>
+                                            <span class="icon b ir_pm">Boutique</span>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h3><span class="icon ir_pm all">전체관람가</span><strong>침묵</strong></strong></h3>
+                                        <div class="info-btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="mega/assets/img/poster02.jpg" srcset="mega/assets/img/poster02@2.jpg 2x" alt="">
+                                        </figure>
+                                        <div class="rank"><strong>2</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir_pm">MX</span>
+                                            <span class="icon b ir_pm">Boutique</span>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h3><span class="icon ir_pm a12">전체관람가</span><strong>침묵</strong></strong></h3>
+                                        <div class="info-btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="mega/assets/img/poster03.jpg" srcset="mega/assets/img/poster03@2.jpg 2x" alt="">
+                                        </figure>
+                                        <div class="rank"><strong>3</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir_pm">MX</span>
+                                            <span class="icon b ir_pm">Boutique</span>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h3><span class="icon ir_pm a15">전체관람가</span><strong>침묵</strong></strong></h3>
+                                        <div class="info-btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="mega/assets/img/poster04.jpg" srcset="mega/assets/img/poster04@2.jpg 2x" alt="">
+                                        </figure>
+                                        <div class="rank"><strong>4</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir_pm">MX</span>
+                                            <span class="icon b ir_pm">Boutique</span>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h3><span class="icon ir_pm a19">전체관람가</span><strong>침묵</strong></strong></h3>
+                                        <div class="info-btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="mega/assets/img/poster01.jpg" srcset="mega/assets/img/poster01@2.jpg 2x" alt="">
+                                        </figure>
+                                        <div class="rank"><strong>1</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir_pm">MX</span>
+                                            <span class="icon b ir_pm">Boutique</span>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h3><span class="icon ir_pm all">전체관람가</span><strong>침묵</strong></strong></h3>
+                                        <div class="info-btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="mega/assets/img/poster02.jpg" srcset="mega/assets/img/poster02@2.jpg 2x" alt="">
+                                        </figure>
+                                        <div class="rank"><strong>2</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir_pm">MX</span>
+                                            <span class="icon b ir_pm">Boutique</span>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h3><span class="icon ir_pm a12">전체관람가</span><strong>침묵</strong></strong></h3>
+                                        <div class="info-btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="mega/assets/img/poster03.jpg" srcset="mega/assets/img/poster03@2.jpg 2x" alt="">
+                                        </figure>
+                                        <div class="rank"><strong>3</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir_pm">MX</span>
+                                            <span class="icon b ir_pm">Boutique</span>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h3><span class="icon ir_pm a15">전체관람가</span><strong>침묵</strong></strong></h3>
+                                        <div class="info-btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="mega/assets/img/poster04.jpg" srcset="mega/assets/img/poster04@2.jpg 2x" alt="">
+                                        </figure>
+                                        <div class="rank"><strong>4</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir_pm">MX</span>
+                                            <span class="icon b ir_pm">Boutique</span>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h3><span class="icon ir_pm a19">전체관람가</span><strong>침묵</strong></strong></h3>
+                                        <div class="info-btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="mega/js/jquery.min_1.12.4.js"></script>
+    <script src="mega/js/modernizr-custom.js"></script>
+    <script src="mega/js/ie-checker.js"></script>
+    <script src="mega/js/swiper.min.js"></script>
+    <script>
+
+
+        //배너 이미지 슬라이드
+        var swiper = new Swiper('.swiper-container', {
+            direction: 'horizontal',
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+            autoplay: {
+                delay: 5000,
+            },
+        });
+
+        //영화차트 슬라이드
+        var swiper2 = new Swiper('.swiper-container2', {
+            slidesPerView: 4,
+            spaceBetween: 24,
+            keyboard: {
+                enabled: true,
+                onlyInViewport: true,
+            },
+            autoplay: {
+                delay: 3000,
+            },
+            breakpoints:{
+                600:{
+                    slidesPerView: 1.4,
+                    spaceBetween:24
+                },
+                768:{
+                    slidesPerView: 2,
+                    spaceBetween:24
+                },
+                960:{
+                    slidesPerView: 3,
+                    spaceBetween:24
+                }
+            }
+        });
+
+
+        //영화차트 탭 메뉴
+        var movBtn = $(".movie-title > ul > li");
+        var movCont = $(".movie-chart > div");
+        
+        movCont.hide().eq(0).show();
+
+        movBtn.click(function(e){
+            e.preventDefault();
+            var target = $(this);
+            var index = target.index();
+            movBtn.removeClass("active");
+
+            target.addClass("active");
+
+            movCont.css("display","none");
+            movCont.eq(index).css("display","flex")
+        })
+    </script>
+</body>
+</html>
